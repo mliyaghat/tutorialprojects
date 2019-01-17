@@ -5,10 +5,10 @@ int main() {
 	int n=10;
 	float a;
 	float array [n];
-	float arrayindex [n];
+	float array2 [n];
 	for (int i=0;i<n;i++){
 		cin>>array[i];
-		arrayindex[i]=i;
+		array2[i]=array[i];
 	}
 	for(int j=0;j<n;j++){
 		for(int i=0;i<n;i++){
@@ -16,16 +16,14 @@ int main() {
 				a = array[i];
 	    		array[i] = array[i + 1];
 	      		array[i + 1] = a;
-	      		a = arrayindex[i];
-	    		arrayindex[i] = arrayindex[i + 1];
-	      		arrayindex[i + 1] = a;
 			}
 		}
-	}
-
-	for (int k=0;k<n;k++){
-		if(array[k]>200){
-			cout<<arrayindex[k]<<endl;
+	}	
+	for(int i =0; i<5; i++){
+    	for(int j=0; j<10; j++){
+           if (array[i] == array2[j] && array[i]>200){
+               cout<<j<<endl;
+			   }
 		}
+    }
 	}
-}
