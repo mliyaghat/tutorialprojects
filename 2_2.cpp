@@ -18,12 +18,14 @@ int main() {
 	      		array[i + 1] = a;
 			}
 		}
-	}	
-	for(int i =0; i<5; i++){
-    	for(int j=0; j<10; j++){
-           if (array[i] == array2[j] && array[i]>200){
-               cout<<j<<endl;
+	}
+	for(int i =0; i<n; i++){
+		if ( array[i]>200){
+    		for(int j=0; j<n; j++){
+        		if (array[i] == array2[j]){
+                	cout<<j<<endl;
 			   }
 		}
-    }
 	}
+}
+}
