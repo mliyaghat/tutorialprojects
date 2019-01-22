@@ -10,7 +10,7 @@ int main() {
 		cin>>array[i];
 		array2[i]=array[i];
 	}
-	for(int j=0;j<n;j++){
+	for(int j=0;j<5;j++){
 		for(int i=0;i<n;i++){
 			if (array[i]<array[i+1]){
 				a = array[i];
