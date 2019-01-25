@@ -18,7 +18,7 @@ int main() {
 		}
 		j++;
 	}
-	for(int j=0;j<n;j++){
+	for(int j=0;j<m;j++){
 		for(int i=0;i<n;i++){
 			if (array2[i]<array2[i+1]){
 				a = array2[i];
@@ -26,9 +26,6 @@ int main() {
 	      		array2[i + 1] = a;
 			}
 		}
-	}
-	for(int i=0;i<m;i++){
-		cout<<array2[i]<<endl;
 	}
 	for(int i=0;i<n;i++){
     	for(int j=0;j<n;j++){
