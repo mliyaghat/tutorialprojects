@@ -19,7 +19,7 @@ int main() {
 		j++;
 	}
 	for(int j=0;j<m;j++){
-		for(int i=0;i<n;i++){
+		for(int i=0;i<m;i++){
 			if (array2[i]<array2[i+1]){
 				a = array2[i];
 	    		array2[i] = array2[i + 1];
@@ -27,10 +27,10 @@ int main() {
 			}
 		}
 	}
-	for(int i=0;i<n;i++){
-    	for(int j=0;j<n;j++){
-        	if (array2[i]==array[j]){
-                cout<<j<<endl;
+	for(int i=0;i<m;i++){
+    		for(int j=0;j<n;j++){
+        		if (array2[i]==array[j]){
+                		cout<<j<<endl;
 			}
 		}
 	}
